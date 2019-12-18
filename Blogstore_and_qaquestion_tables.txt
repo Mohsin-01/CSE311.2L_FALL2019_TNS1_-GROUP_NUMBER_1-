@@ -1,0 +1,57 @@
+--
+-- Database: `nsu robotics society`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blogstore`
+--
+CREATE TABLE `blogstore` (
+  `article_key` varchar(150) NOT NULL,
+  `NSU_ID` decimal(10,0) NOT NULL,
+  `title` varchar(150) NOT NULL,
+  `Article` longtext NOT NULL,
+  `times` varchar(150) NOT NULL,
+  `dates` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+--
+-- Dumping data for table `blogstore`
+--
+INSERT INTO `blogstore` (`article_key`, `NSU_ID`, `title`, `Article`, `times`, `dates`) VALUES('1568426571401', '1721779642', 'Shoaib', 'lg4o5ghoie4gj', '04:02:51am', '2019-09-14');
+
+--
+-- Table structure for table `qaquestion`
+--
+
+CREATE TABLE `qaquestion` (
+  `q_key` varchar(150) NOT NULL,
+  `NSU_ID` decimal(10,0) NOT NULL,
+  `ques` varchar(15000) NOT NULL,
+  `times` varchar(150) NOT NULL,
+  `dates` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--
+-- Dumping data for table `qaquestion`
+--
+
+INSERT INTO `qaquestion` (`q_key`, `NSU_ID`, `ques`, `times`, `dates`) VALUES
+('1566645777180', '1721779642', 'kjgiuhio', '01:22:57pm', '2019-08-24');
+
+-- --------------------------------------------------------
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `blogstore`
+--
+ALTER TABLE `blogstore`
+  ADD PRIMARY KEY (`article_key`);
+--
+-- Indexes for table `qaquestion`
+--
+ALTER TABLE `qaquestion`
+  ADD PRIMARY KEY (`q_key`);
+COMMIT;
